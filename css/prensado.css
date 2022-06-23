@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Galada&display=swap');
+body{
+    font-family: tahoma, arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+#principal{
+    width: 1024px;
+    margin: 15px auto;
+}
+.header-1{
+    height: 50px;
+    background: #fbd562;
+    position: relative;
+    
+}
+.img-1{
+    width: 45px;
+    margin: 5px 0 0 135px;
+    
+}
+.img-9{
+    width: 100%;
+    height: 430px;
+}
+.nav-1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.nav-1 ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-1 li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 0 15px 0 0;
+    padding: 13px;
+}
+
+.nav-1 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+    transition: color 0.3s linear;
+}
+
+.nav-1 a:hover{
+    color: rgb(221, 34, 34);
+}
+
+
+.title h1{
+    font-size: 40px;
+    color: black;
+    font-family: 'Bangers', cursive;
+    font-family: 'Galada', cursive;
+}
+input {
+    display: none;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    perspective: 900px;
+}
+
+.item {
+    border-radius: 0.4rem;
+    overflow: hidden;
+    cursor: pointer;
+    width: 30%;
+    transition: .5s all ease;
+    transform: rotateX(45deg) scale(0.7);
+    box-shadow: 0px 20px 50px rgb(211, 209, 209);
+}
+
+.card1,.card2,.card3 {
+    width: 400px;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 20px;
+    background-image: url("../imagens/cardp.jpeg");
+}
+
+.item:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1);
+    transition: .5s all ease;
+    z-index: 400;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+#obl:checked~.container>.card1 {
+    transform: rotateY(180deg) scaleX(-1);
+    background-image: url("../imagens/hambuguer.jpeg");
+}
+
+#ra:checked~.container>.card2 {
+    transform: rotateY(180deg) scaleX(-1);
+    background-image: url("../imagens/batatafrita.webp");
+}
+
+#slifer:checked~.container>.card3 {
+    transform: rotateY(180deg) scaleX(-1);
+    background-image: url("../imagens/prensadao.jpeg");
+}
+
+label {
+    display: block;
+    width: 405px;
+    height: 500px;
+}
+
+#container {
+    position: center;
+    margin: auto;
+    
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    color: #1a1a1a;
+    font-family: arial;
+    font-size: 25pt;
+    background: #fbd562;
+    text-align: center;
+
+    user-select: none;
+}
+
+
+.article-1{
+    position: relative;
+    background: black;
+    padding: 25px;
+}
+  .p-1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 4s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+
+.p-2{
+    letter-spacing: 5px;
+    background-clip: text;
+    text-transform: uppercase;
+    animation: shine 4s linear infinite;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    animation: shine 4s linear infinite;
+    
+}
+  
+
+
+
+.card-1{
+    left: 10px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    color: #a18a96;
+    background: url(../imagens/hambuguer1.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-2{
+    left: 10px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    color: #a18a96;
+    background: url(../imagens/hambuguer2.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-3{
+    left: 10px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    color: #a18a96;
+    background: url(../imagens/hambuguer3.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card__content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(105, 103, 51);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card__content::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgb(51, 47, 0);
+}
+.card__title{
+    color: #ffffff;
+    line-height: 15px;
+}
+.card_subtitle{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card__description{
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    color: white;
+}
+.card-1:hover .card__content{
+    transform: translateY(0);
+}
+.card-1:hover .card__description{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+.section-2{
+    overflow: auto;
+}
+
+.card__content-1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(105, 103, 51);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card__content-1::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgb(51, 47, 0);
+}
+.card__title-1{
+    color: #ffffff;
+    line-height: 15px;
+}
+.card_subtitle-1{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card__description-1{
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    color: white;
+}
+.card-2:hover .card__content-1{
+    transform: translateY(0);
+}
+.card-2:hover .card__description-1{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+
+
+
+
+
+
+
+.card__content-2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(105, 103, 51);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card__content-2::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgb(51, 47, 0);
+}
+.card__title-2{
+    color: #ffffff;
+    line-height: 15px;
+}
+.card_subtitle-2{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card__description-2{
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    color: white;
+}
+.card-3:hover .card__content-2{
+    transform: translateY(0);
+}
+.card-3:hover .card__description-2{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+.map{
+    width: 100%;
+    padding-left: 25%;
+}
+
+.main-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 70%;
+    left: 0;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: left; 
+    color: #000;
+}
+.main-footer li{
+    position: relative;
+    list-style-type: none;
+    font-size: 40px;
+    display: inline-block;
+    
+}
+.ul-icons li{
+    color: #000;
+}
+
+.button-default{
+    background-color: #727e11;
+    border: 3px solid #2f3432;
+    color: white;
+    padding: 1em 8.4em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+    position: relative;
+    top: 300px;
+}
+
+.section-4{
+    position: relative;
+    bottom: 311px;
+    left: 26px;
+    letter-spacing: 26px;
+}
+
+.p-9{
+    position: relative;
+    left: 170px;
+}
+
+
+.section-3{
+    overflow: auto;
+}
+
+
+
+.card-4{
+    left: 10px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    color: #a18a96;
+    background: url(../imagens/hambuguer4.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card__content-4{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(105, 103, 51);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card__content-4::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgb(51, 47, 0);
+}
+.card__title-4{
+    color: #ffffff;
+    line-height: 15px;
+}
+.card_subtitle-4{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card__description-4{
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    color: white;
+}
+.card-4:hover .card__content-4{
+    transform: translateY(0);
+}
+.card-4:hover .card__description-4{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+
+
+
+.card-5{
+    left: 10px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    color: #a18a96;
+    background: url(../imagens/hambuguer5.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card__content-5{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(105, 103, 51);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card__content-5::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgb(51, 47, 0);
+}
+.card__title-5{
+    color: #ffffff;
+    line-height: 15px;
+}
+.card_subtitle-5{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card__description-5{
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    color: white;
+}
+.card-5:hover .card__content-5{
+    transform: translateY(0);
+}
+.card-5:hover .card__description-5{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+
+
+.card-6{
+    left: 10px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    color: #a18a96;
+    background: url(../imagens/hambuguer6.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card__content-6{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(105, 103, 51);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card__content-6::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgb(51, 47, 0);
+}
+.card__title-6{
+    color: #ffffff;
+    line-height: 15px;
+}
+.card_subtitle-6{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card__description-6{
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    color: white;
+}
+.card-6:hover .card__content-6{
+    transform: translateY(0);
+}
+.card-6:hover .card__description-6{
+    opacity: 1;
+    transition-delay: .25s;
+}
